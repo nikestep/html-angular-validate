@@ -1,0 +1,42 @@
+{
+  "name": "html-angular-validate",
+  "description": "An HTML validator aimed at AngularJS projects.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/nikestep/html-angular-validate",
+  "author": {
+    "name": "Nik Estep",
+    "email": "nik.estep@gmail.com",
+    "url": "https://nikestep.github.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nikestep/html-angular-validate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nikestep/html-angular-validate/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0"
+  },
+  "dependencies": {
+    "async": "~1.4.0",
+    "colors": "~1.1.0",
+    "temporary": "~0.0.8",
+    "w3cjs": "~0.3.0"
+  },
+  "keywords": [
+    "angular",
+    "lint",
+    "linter",
+    "html",
+    "validator",
+    "w3c"
+  ]
+}
