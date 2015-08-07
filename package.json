@@ -24,7 +24,8 @@
     "test": "mocha"
   },
   "devDependencies": {
-    "chai": "^3.2.0"
+    "chai": "^3.2.0",
+    "js-object-pretty-print": "^0.1.4"
   },
   "dependencies": {
     "async": "~1.4.0",
