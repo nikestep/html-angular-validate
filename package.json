@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "chai": "^3.2.0",
+    "chai-as-promised": "^5.1.0",
     "js-object-pretty-print": "^0.1.4"
   },
   "dependencies": {
