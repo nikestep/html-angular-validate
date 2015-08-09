@@ -21,6 +21,7 @@
     "node": ">= 0.10.0"
   },
   "scripts": {
+	"start": "node example.js",
     "test": "mocha"
   },
   "devDependencies": {
