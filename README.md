@@ -236,11 +236,17 @@ validate.validate([
 ```
 
 ## Running the example script
-
 Included in the repository is an example script that demonstrates how to use the plugin. This script is tied to the npm `start` script:
 
 ```shell
 npm start
+```
+
+## Using Gulp
+Included in the repository is a gulpfile that shows how you can build a gulp task using this module.
+
+```shell
+gulp
 ```
 
 ## Contributing
