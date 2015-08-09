@@ -1,7 +1,7 @@
 {
   "name": "html-angular-validate",
   "description": "An HTML validator aimed at AngularJS projects.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "homepage": "https://github.com/nikestep/html-angular-validate",
   "author": {
     "name": "Nik Estep",

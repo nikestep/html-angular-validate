@@ -265,3 +265,6 @@ After that, simply install the required packages:
 ```shell
 npm install
 ```
+
+## Release History
+ * 2015-08-09  v0.1.0  Initial release
