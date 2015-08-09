@@ -29,6 +29,7 @@ describe("Validate", function() {
 			allpassed: true,
 			fileschecked: 2,
 			filessucceeded: 2,
+			filesfailed: 0,
 			failed: []
 		});
 	});
@@ -42,6 +43,7 @@ describe("Validate", function() {
 			allpassed: true,
 			fileschecked: 1,
 			filessucceeded: 1,
+			filesfailed: 0,
 			failed: []
 		});
 	});
@@ -54,6 +56,7 @@ describe("Validate", function() {
 			allpassed: false,
 			fileschecked: 2,
 			filessucceeded: 0,
+			filesfailed: 2,
 			failed: [
 
 				{
@@ -94,6 +97,7 @@ describe("Validate", function() {
 			allpassed: false,
 			fileschecked: 1,
 			filessucceeded: 0,
+			filesfailed: 1,
 			failed: [
 
 				{
@@ -123,6 +127,7 @@ describe("Validate", function() {
 			allpassed: true,
 			fileschecked: 2,
 			filessucceeded: 2,
+			filesfailed: 0,
 			failed: []
 		});
 	});
@@ -136,6 +141,7 @@ describe("Validate", function() {
 			allpassed: true,
 			fileschecked: 1,
 			filessucceeded: 1,
+			filesfailed: 0,
 			failed: []
 		});
 	});
@@ -147,6 +153,7 @@ describe("Validate", function() {
 			allpassed: false,
 			fileschecked: 1,
 			filessucceeded: 0,
+			filesfailed: 1,
 			failed: [
 
 				{
@@ -171,6 +178,7 @@ describe("Validate", function() {
 			allpassed: false,
 			fileschecked: 1,
 			filessucceeded: 0,
+			filesfailed: 1,
 			failed: [
 
 				{
@@ -205,6 +213,7 @@ describe("Validate", function() {
 			allpassed: false,
 			fileschecked: 1,
 			filessucceeded: 0,
+			filesfailed: 1,
 			failed: [
 
 				{
@@ -234,6 +243,7 @@ describe("Validate", function() {
 			allpassed: false,
 			fileschecked: 1,
 			filessucceeded: 0,
+			filesfailed: 1,
 			failed: [
 
 				{
@@ -263,6 +273,7 @@ describe("Validate", function() {
 			allpassed: false,
 			fileschecked: 1,
 			filessucceeded: 0,
+			filesfailed: 1,
 			failed: [
 
 				{
