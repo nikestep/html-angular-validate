@@ -32,7 +32,6 @@
   },
   "dependencies": {
     "async": "~1.4.1",
-    "colors": "~1.1.2",
     "globule": "^0.2.0",
     "node.extend": "^1.1.5",
     "promise": "^7.0.4",
