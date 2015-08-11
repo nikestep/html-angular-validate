@@ -273,5 +273,6 @@ npm install
 ```
 
 ## Release History
+ * 2015-08-11  v0.1.2  Fixing #1
  * 2015-08-09  v0.1.1  Removing colors dependency
  * 2015-08-09  v0.1.0  Initial release
