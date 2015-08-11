@@ -9,6 +9,8 @@ chai
 	.use(require('chai-as-promised'));  // Must be last in the list!!
 
 describe("Validate", function() {
+	this.timeout(5000);
+
 	it("Reject no argument call", function() {
 		return validate.validate().should.be.rejected;
 	});
