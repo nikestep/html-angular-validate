@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var gutil = require('gulp-util');
-var validate = require('./lib/validate.js');
+var validate = require('./lib/validate.js');  // change to require('html-angular-validate')
 
 gulp.task('htmlangular', [], function(callback) {
 	var colors = gutil.colors;
