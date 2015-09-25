@@ -264,7 +264,7 @@ npm test
 The only global you should have installed here is mocha:
 
 ```shell
-npm test
+npm install mocha --global
 ```
 
 After that, simply install the required packages:
