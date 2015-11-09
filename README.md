@@ -281,6 +281,7 @@ npm install
 ```
 
 ## Release History
+ * 2015-11-09  v0.1.7  Fixing breakage in v0.1.6 release
  * 2015-11-09  v0.1.6  Merging #12 and code health fixes
  * 2015-10-31  v0.1.5  Merging #4 and #6
  * 2015-09-24  v0.1.4  Merging #3
