@@ -259,7 +259,8 @@ gulp
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add tests for any new or changed functionality.
 
-Before submitting a pull request, please run the tests to make sure you did not break any existing functionality:
+Before submitting a pull request, please run the tests to make sure you did not break any existing functionality and that
+your changes conform to the project style:
 
 ```shell
 npm test

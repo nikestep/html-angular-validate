@@ -22,6 +22,7 @@
   },
   "scripts": {
     "start": "node example.js",
+	"pretest": "gulp code-health",
     "test": "mocha"
   },
   "devDependencies": {
