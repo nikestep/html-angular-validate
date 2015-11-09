@@ -1,7 +1,11 @@
 var gulp = require('gulp');
 var gutil = require('gulp-util');
+var jscs = require('gulp-jscs');
+var jshint = require('gulp-jshint');
+var stylish = require('gulp-jscs-stylish');
 var validate = require('./lib/validate.js'); // change to require('html-angular-validate')
 
+// Example task for using this module.
 gulp.task('htmlangular', [], function(callback) {
   var colors = gutil.colors;
   var log = gutil.log;
@@ -49,4 +53,21 @@ gulp.task('htmlangular', [], function(callback) {
   });
 });
 
+// Task to lint javascript files.
+gulp.task('js-lint', function() {
+  return gulp.src(['./lib/validate.js', './test/validateTest.js'])
+    .pipe(jshint())
+    .pipe(jshint.reporter('jshint-stylish'))
+    .pipe(jshint.reporter('fail'));
+});
+
+// Task to style-check javascript files
+gulp.task('js-style', function() {
+  return gulp.src(['./lib/validate.js', './test/validateTest.js'])
+    .pipe(jscs())
+    .pipe(stylish());
+});
+
 gulp.task('default', ['htmlangular']);
+
+gulp.task('code-health', ['js-lint', 'js-style']);

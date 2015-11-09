@@ -1,0 +1,9 @@
+{
+  "curly": true,
+  "eqeqeq": true,
+  "node": true,
+  "noempty": true,
+  "predef": [ "alert", "angular", "gapi", "require", "window" ],
+  "undef": true,
+  "unused": true
+}

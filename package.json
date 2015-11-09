@@ -29,8 +29,12 @@
     "chai-as-promised": "^5.1.0",
     "chai-properties": "^1.2.1",
     "gulp": "^3.9.0",
+    "gulp-jscs": "^3.0.2",
+    "gulp-jscs-stylish": "^1.2.1",
+    "gulp-jshint": "^1.12.0",
     "gulp-util": "^3.0.6",
-    "js-object-pretty-print": "^0.2.0"
+    "js-object-pretty-print": "^0.2.0",
+    "jshint-stylish": "^2.0.1"
   },
   "dependencies": {
     "async": "~1.5.0",
