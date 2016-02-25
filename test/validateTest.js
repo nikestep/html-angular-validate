@@ -141,30 +141,6 @@ describe('Validate', function() {
     });
   });
 
-  it('Invalid Template Fragment with Bad Angular Operator', function() {
-    return validate.validate([
-      'test/html/invalid/template/improper_angular_operator.tmpl.html'
-    ]).should.eventually.have.properties({
-      allpassed: false,
-      fileschecked: 1,
-      filessucceeded: 0,
-      filesfailed: 1,
-      failed: [
-
-        {
-          'filepath': 'test/html/invalid/template/improper_angular_operator.tmpl.html',
-          'numerrs': 1,
-          'errors': [{
-            'col': 16,
-            'line': 1,
-            'msg': '“&” did not start a character reference. (“&” probably should have ' +
-              'been escaped as “&amp;”.)'
-          }]
-        }
-      ]
-    });
-  });
-
   it('Invalid Template Fragment with Improperly Closed Tag', function() {
     return validate.validate([
       'test/html/invalid/template/improperly_closed_tag.tmpl.html'
