@@ -141,6 +141,18 @@ describe('Validate', function() {
     });
   });
 
+  it('Correct Template Fragment Using Angular Bindings', function() {
+    return validate.validate([
+      'test/html/valid/template/valid_angular_bindings.tmpl.html'
+    ]).should.eventually.have.properties({
+      allpassed: true,
+      fileschecked: 1,
+      filessucceeded: 1,
+      filesfailed: 0,
+      failed: []
+    });
+  });
+
   it('Invalid Template Fragment with Improperly Closed Tag', function() {
     return validate.validate([
       'test/html/invalid/template/improperly_closed_tag.tmpl.html'
