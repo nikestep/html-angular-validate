@@ -48,7 +48,7 @@
     "string.prototype.endswith": "~0.2.0",
     "temporary": "~0.0.8",
     "w3cjs": "~0.3.0",
-    "xmlbuilder": "~4.2.1"
+    "xmlbuilder": "~5.0.1"
   },
   "keywords": [
     "angular",
