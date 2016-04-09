@@ -1,7 +1,7 @@
 {
   "name": "html-angular-validate",
   "description": "An HTML validator aimed at AngularJS projects.",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "homepage": "https://github.com/nikestep/html-angular-validate",
   "author": {
     "name": "Nik Estep",
@@ -18,7 +18,7 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 4.0.0"
   },
   "scripts": {
     "start": "node example.js",
