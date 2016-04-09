@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "chai": "~3.5.0",
-    "chai-as-promised": "~5.2.0",
+    "chai-as-promised": "~5.3.0",
     "chai-properties": "~1.2.1",
     "gulp": "~3.9.1",
     "gulp-jscs": "~3.0.2",
@@ -48,7 +48,7 @@
     "string.prototype.endswith": "~0.2.0",
     "temporary": "~0.0.8",
     "w3cjs": "~0.3.0",
-    "xmlbuilder": "~5.0.1"
+    "xmlbuilder": "~8.2.2"
   },
   "keywords": [
     "angular",
