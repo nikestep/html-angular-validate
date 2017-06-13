@@ -3,7 +3,7 @@
   "eqeqeq": true,
   "node": true,
   "noempty": true,
-  "predef": [ "require", "describe", "it" ],
+  "predef": [ "require", "describe", "it", "Promise" ],
   "undef": true,
   "unused": true
 }
