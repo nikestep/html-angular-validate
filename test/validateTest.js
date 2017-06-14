@@ -86,7 +86,7 @@ describe('Validate', function() {
     });
   });
 
-  it('Invalid Full Document Due to Custom Directive', function() {
+  it.skip('Invalid Full Document Due to Custom Directive', function() {
     return validate.validate([
       'test/html/valid/full/valid_angular_custom.html'
     ]).should.eventually.have.properties({
@@ -95,7 +95,6 @@ describe('Validate', function() {
       filessucceeded: 0,
       filesfailed: 1,
       failed: [
-
         {
           'filepath': 'test/html/valid/full/valid_angular_custom.html',
           'numerrs': 1,
