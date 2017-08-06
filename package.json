@@ -26,6 +26,7 @@
     "test": "mocha"
   },
   "devDependencies": {
+    "ansi-styles": "^3.2.0",
     "chai": "^3.5.0",
     "chai-as-promised": "^7.0.0",
     "chai-properties": "~1.2.1",
