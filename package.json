@@ -27,8 +27,8 @@
   },
   "devDependencies": {
     "ansi-styles": "^3.2.0",
-    "chai": "^3.5.0",
-    "chai-as-promised": "^7.0.0",
+    "chai": "^4.1.0",
+    "chai-as-promised": "^7.1.1",
     "chai-properties": "~1.2.1",
     "gulp": "~3.9.1",
     "gulp-jscs": "^4.0.0",
@@ -36,9 +36,9 @@
     "gulp-jshint": "^2.0.4",
     "gulp-util": "^3.0.8",
     "js-object-pretty-print": "^0.3.0",
-    "jshint": "^2.9.4",
+    "jshint": "^2.9.5",
     "jshint-stylish": "^2.2.1",
-    "mocha": "^3.4.2"
+    "mocha": "^3.5.0"
   },
   "dependencies": {
     "async": "^2.4.1",
