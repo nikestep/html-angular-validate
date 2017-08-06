@@ -19,7 +19,7 @@ project is large enough, you may need to run your own local W3C validator server
 [here](https://github.com/tlvince/w3c-validator-guide). See the options below for pointing this plugin to a local validator service.
 
 ## Usage
-This plugin is tested on node v4.0.0 and higher and is installed in the usual way:
+This plugin is tested on node v5.0.0 and higher and is installed in the usual way:
 
 ```shell
 npm install html-angular-validate --save
