@@ -281,6 +281,7 @@ npm install
 ```
 
 ## Release History
+ * 2017-08-06  v0.2.1  Dropping Node v4 support
  * 2017-08-06  v0.2.0  Merging #22, dependency updates, and supported Node version updates
  * 2016-04-09  v0.1.9  Merging #14, dependency updates, and supported Node version updates
  * 2016-03-12  v0.1.8  Merging #8 and #13 and dependency updates
