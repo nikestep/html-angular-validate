@@ -130,6 +130,19 @@ Default value: `tmpl.html`
 
 The extension of HTML files that are templated or otherwise not complete and valid HTML files (i.e. do not start and end with `<html>`). The validator will wrap these files as complete HTML pages for validation.
 
+### componentext
+Type: `String`
+Default value: `component.js`
+
+The extension of Angular Component files that have templates (es6 template literals). The validator will extract the template from the component file and it will wrap these templates as complete HTML pages for validation.
+
+The search pattern is anything like this:
+```js
+
+   template: `...`
+
+```
+
 ### doctype
 Type: `String`
 Default value: `HTML5`

@@ -126,6 +126,18 @@ describe('Validate', function() {
     });
   });
 
+  it('Correct Component Template Fragments', function() {
+    return validate.validate([
+      'test/html/valid/component/valid.component.js',
+    ]).should.eventually.have.properties({
+      allpassed: true,
+      fileschecked: 1,
+      filessucceeded: 1,
+      filesfailed: 0,
+      failed: []
+    });
+  });
+
   it('Correct Template Fragment with Custom Tag', function() {
     return validate.validate([
       'test/html/valid/template/valid_angular_custom.tmpl.html'
@@ -231,6 +243,62 @@ describe('Validate', function() {
           }, {
             'col': 5,
             'line': 1,
+            'msg': 'Unclosed element “div”.'
+          }]
+        },
+      ]
+    });
+  });
+  it('Invalid Component Template Fragment with Missing Closing Tag', function() {
+    return validate.validate([
+      'test/html/invalid/component/missing_closing_tag.component.js',
+    ]).should.eventually.have.properties({
+      allpassed: false,
+      fileschecked: 1,
+      filessucceeded: 0,
+      filesfailed: 1,
+      failed: [
+
+        {
+          'filepath': 'test/html/invalid/component/missing_closing_tag.component.js',
+          'numerrs': 2,
+          'errors': [{
+            'col': 7,
+            'line': 11,
+            'msg': 'End tag for  “body” seen, but there were unclosed elements.'
+          }, {
+            'col': 13,
+            'line': 6,
+            'msg': 'Unclosed element “div”.'
+          }]
+        },
+      ]
+    });
+  });
+  it('Invalid Component with 2 Template Fragments with Missing Closing Tag', function() {
+    return validate.validate([
+      'test/html/invalid/component/two_templates_missing_closing_tag.component.js',
+    ]).should.eventually.have.properties({
+      allpassed: false,
+      fileschecked: 1,
+      filessucceeded: 0,
+      filesfailed: 1,
+      failed: [
+
+        {
+          'filepath': 'test/html/invalid/component/two_templates_missing_closing_tag.component.js',
+          'numerrs': 3,
+          'errors': [{
+            'col': 7,
+            'line': 16,
+            'msg': 'End tag for  “body” seen, but there were unclosed elements.'
+          }, {
+            'col': 25,
+            'line': 11,
+            'msg': 'Unclosed element “div”.'
+          }, {
+            'col': 13,
+            'line': 6,
             'msg': 'Unclosed element “div”.'
           }]
         },
