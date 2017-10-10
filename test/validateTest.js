@@ -75,7 +75,7 @@ describe('Validate', function() {
           'errors': [{
             'col': 16,
             'line': 1,
-            'msg': 'Start tag seen without seeing a doctype first. Expected e.g. “<!DOCTYPE html>”.'
+            'msg': 'Start tag seen without seeing a doctype first. Expected “<!DOCTYPE html>”.'
           }, {
             'col': 14,
             'line': 2,
@@ -322,7 +322,7 @@ describe('Validate', function() {
           'errors': [{
             'col': 50,
             'line': 1,
-            'msg': 'Start tag seen without seeing a doctype first. Expected e.g. “<!DOCTYPE html>”.'
+            'msg': 'Start tag seen without seeing a doctype first. Expected “<!DOCTYPE html>”.'
           }, {
             'col': 50,
             'line': 1,
