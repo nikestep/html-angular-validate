@@ -75,7 +75,7 @@ describe('Validate', function() {
           'errors': [{
             'col': 16,
             'line': 1,
-            'msg': 'Start tag seen without seeing a doctype first. Expected e.g. “<!DOCTYPE html>”.'
+            'msg': 'Start tag seen without seeing a doctype first. Expected “<!DOCTYPE html>”.'
           }, {
             'col': 14,
             'line': 2,
@@ -121,6 +121,18 @@ describe('Validate', function() {
       allpassed: true,
       fileschecked: 2,
       filessucceeded: 2,
+      filesfailed: 0,
+      failed: []
+    });
+  });
+
+  it('Correct Component Template Fragments', function() {
+    return validate.validate([
+      'test/html/valid/component/valid.component.js',
+    ]).should.eventually.have.properties({
+      allpassed: true,
+      fileschecked: 1,
+      filessucceeded: 1,
       filesfailed: 0,
       failed: []
     });
@@ -237,6 +249,62 @@ describe('Validate', function() {
       ]
     });
   });
+  it('Invalid Component Template Fragment with Missing Closing Tag', function() {
+    return validate.validate([
+      'test/html/invalid/component/missing_closing_tag.component.js',
+    ]).should.eventually.have.properties({
+      allpassed: false,
+      fileschecked: 1,
+      filessucceeded: 0,
+      filesfailed: 1,
+      failed: [
+
+        {
+          'filepath': 'test/html/invalid/component/missing_closing_tag.component.js',
+          'numerrs': 2,
+          'errors': [{
+            'col': 7,
+            'line': 11,
+            'msg': 'End tag for  “body” seen, but there were unclosed elements.'
+          }, {
+            'col': 13,
+            'line': 6,
+            'msg': 'Unclosed element “div”.'
+          }]
+        },
+      ]
+    });
+  });
+  it('Invalid Component with 2 Template Fragments with Missing Closing Tag', function() {
+    return validate.validate([
+      'test/html/invalid/component/two_templates_missing_closing_tag.component.js',
+    ]).should.eventually.have.properties({
+      allpassed: false,
+      fileschecked: 1,
+      filessucceeded: 0,
+      filesfailed: 1,
+      failed: [
+
+        {
+          'filepath': 'test/html/invalid/component/two_templates_missing_closing_tag.component.js',
+          'numerrs': 3,
+          'errors': [{
+            'col': 7,
+            'line': 16,
+            'msg': 'End tag for  “body” seen, but there were unclosed elements.'
+          }, {
+            'col': 25,
+            'line': 11,
+            'msg': 'Unclosed element “div”.'
+          }, {
+            'col': 13,
+            'line': 6,
+            'msg': 'Unclosed element “div”.'
+          }]
+        },
+      ]
+    });
+  });
 
   it('Invalid Template Fragment with Missing Template Extension', function() {
     return validate.validate([
@@ -254,7 +322,7 @@ describe('Validate', function() {
           'errors': [{
             'col': 50,
             'line': 1,
-            'msg': 'Start tag seen without seeing a doctype first. Expected e.g. “<!DOCTYPE html>”.'
+            'msg': 'Start tag seen without seeing a doctype first. Expected “<!DOCTYPE html>”.'
           }, {
             'col': 50,
             'line': 1,
