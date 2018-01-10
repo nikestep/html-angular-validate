@@ -6,7 +6,7 @@ var stylish = require('gulp-jscs-stylish');
 var validate = require('./lib/validate.js'); // change to require('html-angular-validate')
 
 // Example task for using this module.
-gulp.task('htmlangular', [], function(callback) {
+gulp.task('htmlangular', function(callback) {
   var colors = gutil.colors;
   var log = gutil.log;
 
@@ -68,6 +68,6 @@ gulp.task('js-style', function() {
     .pipe(stylish());
 });
 
-gulp.task('default', ['htmlangular']);
+gulp.task('default', gulp.series('htmlangular'));
 
-gulp.task('code-health', ['js-lint', 'js-style']);
+gulp.task('code-health', gulp.series('js-lint', 'js-style'));
