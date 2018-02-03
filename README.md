@@ -303,6 +303,7 @@ npm install
 ```
 
 ## Release History
+ * 2018-02-03  v0.2.3  Merging #29 and incorporating #15
  * 2018-01-09  v0.2.2  Merging #27, dependency updates, and supported Node version updates
  * 2017-08-06  v0.2.1  Dropping Node v4 support
  * 2017-08-06  v0.2.0  Merging #22, dependency updates, and supported Node version updates
