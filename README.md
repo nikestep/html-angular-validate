@@ -134,12 +134,21 @@ The extension of HTML files that are templated or otherwise not complete and val
 Type: `String`
 Default value: `component.js`
 
-The extension of Angular Component files that have templates (es6 template literals). The validator will extract the template from the component file and it will wrap these templates as complete HTML pages for validation.
+The extension of Angular Component files that have templates. The validator will extract the template from the component file and it will wrap these templates as complete HTML pages for validation.
 
-The search pattern is anything like this:
+The search pattern honors both notations: ES6 literals (using back-ticks) and legacy style templates (using single quotation marks). It is also possible to use the equation sign or a colon interchangeably.
+
+ES6 literals:
 ```js
 
    template: `...`
+
+```
+Legacy templates:
+```js
+
+   var template = '...'
+	   	 +'...';
 
 ```
 
