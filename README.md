@@ -1,6 +1,6 @@
 # html-angular-validate
 [![Build Status](https://travis-ci.org/nikestep/html-angular-validate.svg?branch=master)](https://travis-ci.org/nikestep/html-angular-validate) [![Dependency Status](https://david-dm.org/nikestep/html-angular-validate.svg)](https://david-dm.org/nikestep/html-angular-validate) [![devDependency Status](https://david-dm.org/nikestep/html-angular-validate/dev-status.svg)](https://david-dm.org/nikestep/html-angular-validate#info=devDependencies)
-[![npm Downloads Count](https://img.shields.io/npm/dm/html-angular-validate.svg)](https://github.com/nikestep/html-angular-validate)
+[![npm Downloads Count](https://img.shields.io/npm/dm/html-angular-validate.svg)](https://github.com/nikestep/html-angular-validate) [![Greenkeeper badge](https://badges.greenkeeper.io/nikestep/html-angular-validate.svg)](https://greenkeeper.io/)
 
 > An HTML validator aimed at AngularJS projects.
 
